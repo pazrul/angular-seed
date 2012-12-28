@@ -29,11 +29,19 @@ body{
 .menu > li {
   display: block;
   width:70%;
-  margin:1%;
-  padding:1%
+  margin:1% auto;
+  padding:1% 5%;
   border:.1em solid black;
   font-size: 2em;
   background-color: blue;
+  text-align: center;
+}
+.menu > li > a {
+  height:100%;
+  width:100%;
+  display:block;
+  text-decoration: none;
+  color:white;
 }
 
 .ng-view {

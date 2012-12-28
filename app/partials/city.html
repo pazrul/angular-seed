@@ -1,5 +1,6 @@
-<h1><a href="">City. Link to games in city</a></h1>
-<p>city.blurb</a>
+<h1>Cities</h1>
 
-<p>This is the placeholder for the Cities view.</p>
-{{app-name}} - <span app-version></span>
+<div ng-repeat="city in cities" class="city">
+	<a href="{{city.id}}">{{city.name}}</a>
+	<p>{{city.snippet}}</a>
+</div>
