@@ -20,7 +20,7 @@ function CitiesListCtrl($scope, $http) {
 
 function CityDetailCtrl($scope, $routeParams, $http) {
 $http.get('cities/' + $routeParams.cityId + '.json').success(function(data) {
-  $scope.phone = data;
+  $scope.city = data;
 });
 }
 //PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
