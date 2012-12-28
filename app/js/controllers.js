@@ -23,4 +23,4 @@ $http.get('cities/' + $routeParams.cityId + '.json').success(function(data) {
   $scope.city = data;
 });
 }
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
+//CityDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];

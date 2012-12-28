@@ -1,0 +1,113 @@
+<img ng-src="{{city.images[0]}}">
+
+<h1>{{city.name}}</h1>
+
+<p>{{city.description}}</p>
+
+<ul>
+  <li ng-repeat="img in city.images">
+    <img ng-src="{{img}}">
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd ng-repeat="availability in city.availability">{{availability}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd>{{city.battery.type}}</dd>
+      <dt>Talk Time</dt>
+      <dd>{{city.battery.talkTime}}</dd>
+      <dt>Standby time (max)</dt>
+      <dd>{{city.battery.standbyTime}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd>{{city.storage.ram}}</dd>
+      <dt>Internal Storage</dt>
+      <dd>{{city.storage.flash}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Connectivity</span>
+    <dl>
+      <dt>Network Support</dt>
+      <dd>{{city.connectivity.cell}}</dd>
+      <dt>WiFi</dt>
+      <dd>{{city.connectivity.wifi}}</dd>
+      <dt>Bluetooth</dt>
+      <dd>{{city.connectivity.bluetooth}}</dd>
+      <dt>Infrared</dt>
+      <dd>{{city.connectivity.infrared}}</dd>
+      <dt>GPS</dt>
+      <dd>{{city.connectivity.gps}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Android</span>
+    <dl>
+      <dt>OS Version</dt>
+      <dd>{{city.android.os}}</dd>
+      <dt>UI</dt>
+      <dd>{{city.android.ui}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Size and Weigth</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in city.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{city.sizeAndWeight.weight}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd>{{city.display.screenSize}}</dd>
+      <dt>Screen resolution</dt>
+      <dd>{{city.display.screenResolution}}</dd>
+      <dt>Touch screen</dt>
+      <dd>{{city.display.touchScreen}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd>{{city.hardware.cpu}}</dd>
+      <dt>USB</dt>
+      <dd>{{city.hardware.usb}}</dd>
+      <dt>Audio / headphone jack</dt>
+      <dd>{{city.hardware.audioJack}}</dd>
+      <dt>FM Radio</dt>
+      <dd>{{city.hardware.fmRadio}}</dd>
+      <dt>Accelerometer</dt>
+      <dd>{{city.hardware.accelerometer}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd>{{city.camera.primary}}</dd>
+      <dt>Features</dt>
+      <dd>{{city.camera.features.join(', ')}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dd>{{city.additionalFeatures}}</dd>
+  </li>
+</ul>
