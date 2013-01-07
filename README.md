@@ -1,3 +1,7 @@
+This will be a web app for generating bike polo pickup games. It's also my attempt to play around with Angular.js, hopefully breaking enough stuff that I learn how to fix it. 
+
+And here is the original Readme for AngularSeed, which i am using much of as a template.
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
